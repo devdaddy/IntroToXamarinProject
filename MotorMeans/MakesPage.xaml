@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MotorMeans.MakesPage"
+    IconImageSource="Makes"
+    Title="Makes">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Start">
+            <Label Text="Chevy" HorizontalOptions="Center"></Label>
+            <Label Text="Ferrari" HorizontalOptions="Center"></Label>
+            <Label Text="Ford" HorizontalOptions="Center"></Label>
+            <Label Text="Dodge" HorizontalOptions="Center"></Label>
+            <Label Text="Jaguar" HorizontalOptions="Center"></Label>
+            <Label Text="Plymouth" HorizontalOptions="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

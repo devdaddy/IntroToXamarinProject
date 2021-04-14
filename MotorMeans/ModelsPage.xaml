@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MotorMeans.ModelsPage"
+    IconImageSource="Models"
+    Title="Models">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Label Text="Camaro"></Label>
+            <Label Text="Charger"></Label>
+            <Label Text="'Cuda"></Label>
+            <Label Text="Dino 246 GT"></Label>
+            <Label Text="F Type"></Label>
+            <Label Text="Mustang"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

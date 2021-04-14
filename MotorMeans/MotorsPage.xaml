@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MotorMeans.ViewModels;assembly=MotorMeans"
+    xmlns:converters="clr-namespace:MotorMeans.Converters;assembly=MotorMeans"
+    x:Class="MotorMeans.MotorsPage"
+    IconImageSource="Motors"
+    Title="Engine Liter to Cubic Inch">
+    <ContentPage.Resources>
+        <converters:LiterConverter x:Key="volumeConverter"></converters:LiterConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Fill" Padding="20" x:DataType="local:VolumeModel">
+            <StackLayout.BindingContext>
+                <local:VolumeModel />
+            </StackLayout.BindingContext>
+            <Entry Text="{Binding Liters}" Placeholder="Enter Liters" HorizontalOptions="Fill"></Entry>
+            <Label Text="{Binding Liters, Converter={StaticResource volumeConverter}}" HorizontalOptions="Center" VerticalOptions="End" Margin="0,50,0,0"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

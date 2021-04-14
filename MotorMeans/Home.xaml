@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MotorMeans"
+             x:Class="MotorMeans.Home"
+             Title="Home"
+             BackgroundColor="#FFFFFF">
+    <NavigationPage.TitleView>
+        <Label Text="Home" HorizontalOptions="CenterAndExpand" FontSize="32"></Label>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Start">
+            <StackLayout Orientation="Vertical">
+                <ImageButton BackgroundColor="#FFFFFF" Padding="10, 10, 10, 0" Source="Makes" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="GoToMakes"></ImageButton>
+                <Label Text="Makes" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <ImageButton BackgroundColor="#FFFFFF" Padding="10, 10, 10, 0" Source="Models" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="GoToModels"></ImageButton>
+                <Label Text="Models" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <ImageButton BackgroundColor="#FFFFFF" Padding="10, 10, 10, 0" Source="Color" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="GoToColors"></ImageButton>
+                <Label Text="Paints" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <ImageButton BackgroundColor="#FFFFFF" Padding="10, 10, 10, 0" Source="Motors" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Clicked="GoToMotors"></ImageButton>
+                <Label Text="Motors" HorizontalOptions="Center"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
