@@ -1,5 +1,5 @@
 # IntroToXamarinProject
 
-Capstone Project for Magenic Master Intro To Xamarin
+Capstone Project for Magenic Masters Intro To Xamarin
 
 Instructor: Kevin Ford
